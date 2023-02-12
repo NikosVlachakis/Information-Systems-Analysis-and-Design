@@ -1,0 +1,6 @@
+__pycache__/
+*.txt
+*.out
+*.csv
+*.libsvm
+*.meta
