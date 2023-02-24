@@ -10,13 +10,13 @@ Machine Learning operators executed in big data analytics runtimes (e.g., Apache
 
 We completed the following steps in the project:
 
-1. **Installation and setup of Apache Spark**: Using local or Okeanos-based resources, we installed and set up Apache Spark as our open-source, distributed analytics engine for executing different operators.
+1. **Installation and setup of Apache Spark**: Using Okeanos-based resources, we installed and set up Apache Spark as our open-source, distributed analytics engine for executing different operators.
 
 2. **Operator Selection**: We selected three operators from Apache Spark's MLLib library: k-means, random forest regression, and Word2Vec. These operators are diverse but belong to the same family.
 
-3. **Data Generation and Loading**: Using an artificial data generator, we created sample input data for the operators. The input data was of different sizes and structures, including graphs of different types and data points of different dimensions.
+3. **Data Generation and Loading**: Using an artificial data generator per operator, we created sample input data for the operators. The input data was of different sizes and structures and data points of different dimensions.
 
-4. **Measurement of Performance and Modeling**: We executed multiple combinations of data to operator and monitored, for each combination, the total running time and main memory cluster usage, and other useful statistics. This data was then used to train a regression model to create accurate prediction models with minimal error in unseen data inputs.
+4. **Measurement of Performance and Modeling**: We executed multiple combinations of data to operator and monitored, for each combination, the total running time and main memory cluster usage. This data was then used to train a regression model to create accurate prediction models with minimal error in unseen data inputs.
 
 ## How to Run Experiments
 

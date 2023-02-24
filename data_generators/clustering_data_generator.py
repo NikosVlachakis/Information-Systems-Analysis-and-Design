@@ -16,7 +16,7 @@ def clustering_generate_data(num_samples,num_features,num_centers):
     open('data.libsvm', 'a').close()
 
 
-    chunk_size = 5*(10**6)
+    chunk_size = 10**6
 
     # check if num_samples is greater than 10**6 and if so create the dataset in chunks
     if num_samples > chunk_size:
@@ -45,7 +45,7 @@ def clustering_generate_data(num_samples,num_features,num_centers):
             f.write('num_samples,{}\n'.format(num_samples))
             f.write('num_features,{}\n'.format(num_features))
             f.write('num_classes,{}\n'.format(len(np.unique(y))))
-            f.write('dataset_size,{} MB'.format(os.path.getsize('data.libsvm')/10**6))
+            f.write('dataset_size,{}'.format(os.path.getsize('data.libsvm')/10**6))
             print("dataset size is: {} MB".format(os.path.getsize('data.libsvm')/10**6))
             f.close()
         return num_features,num_centers,num_samples
